@@ -1,7 +1,7 @@
 # SENTINEL X — Network Fundamentals Explorer
 
-**Version:** 1.1.0  
-**Platform:** Windows 10/11  
+**Version:** 1.1.0
+**Platform:** Windows 10/11
 **Python:** 3.11–3.15 recommended for the optional Streamlit dashboard (the original CLI uses the standard library).
 
 SENTINEL X is a local Windows networking lab that helps learners understand IP configuration, DNS, ICMP, TCP, UDP, ARP, Windows processes and services.
