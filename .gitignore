@@ -22,3 +22,8 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+# Local investigation exports (may contain host-specific information)
+reports/
+*.report.json
+*.report.csv
