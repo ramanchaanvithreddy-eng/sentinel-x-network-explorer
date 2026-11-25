@@ -1,0 +1,1 @@
+# SENTINEL X uses only the Python standard library. No installation required.
