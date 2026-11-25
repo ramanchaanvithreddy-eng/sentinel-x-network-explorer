@@ -110,7 +110,7 @@ def show_arp_viewer() -> None:
 
 
 def show_tcp_monitor() -> None:
-    print(f"\n{LINE}\nLOCAL TCP CONNECTIONS (first 50)\n{LINE}")
+    print(f"\n{LINE}\nLOCAL TCP CONNECTIONS (first 100)\n{LINE}")
     rows = get_tcp_connections()
     _print_table(
         rows,
@@ -119,14 +119,16 @@ def show_tcp_monitor() -> None:
             ("LocalPort", "Local port"),
             ("RemoteAddress", "Remote address"),
             ("RemotePort", "Remote port"),
-            ("State", "State"),
+            ("StateName", "State"),
             ("OwningProcess", "Process ID"),
+            ("ProcessName", "Process name"),
+            ("ServiceNames", "Windows services"),
         ],
     )
 
 
 def show_udp_viewer() -> None:
-    print(f"\n{LINE}\nLOCAL UDP ENDPOINTS (first 50)\n{LINE}")
+    print(f"\n{LINE}\nLOCAL UDP ENDPOINTS (first 100)\n{LINE}")
     rows = get_udp_endpoints()
     _print_table(
         rows,
@@ -134,6 +136,8 @@ def show_udp_viewer() -> None:
             ("LocalAddress", "Local address"),
             ("LocalPort", "Local port"),
             ("OwningProcess", "Process ID"),
+            ("ProcessName", "Process name"),
+            ("ServiceNames", "Windows services"),
         ],
     )
     print("\nUDP endpoints do not have TCP-style Established or Listening connection states.")
